@@ -3,7 +3,7 @@ import threading
 
 HEADER = 64 #message size restriction as bytes
 PORT = 5050
-#SERVER = "192.168.1.114"
+SERVER = "192.168.1.114
 SERVER = socket.gethostbyname(socket.gethostname()) #auto taking ip
 ADDR = (SERVER,PORT)
 FORMAT = 'utf-8'
@@ -36,4 +36,5 @@ def start():
         print(f"[ACTIVE CONNECTIONS] {threading.active_count()-1}")
 
 print("[STARTING] server is starting...")
+
 start()
